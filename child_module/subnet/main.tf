@@ -1,8 +1,8 @@
-resource "azurerm_resource_group" "apple" {
-    for_each = var.snett
+resource "azurerm_subnet" "apple" {
+    for_each = var.subnets
     name = each.value.name
     virtual_network_name = each.value.virtual_network_name
     resource_group_name = each.value.resource_group_name
-    address_prefiexes = each.value.address_prefiexes
+    address_prefixes = each.value.address_prefixes
   
 }
