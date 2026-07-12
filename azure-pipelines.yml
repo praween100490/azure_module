@@ -9,7 +9,7 @@ steps:
 - script: |
     sudo apt-get update
     sudo apt-get install -y unzip
-    curl -fsSL https://releases.hashicorp.com/terraform/1.15.8/terraform_1.15.8_linux_amd64.zip -o terraform.zip
+    curl -fsSL https://releases.hashicorp.com/terraform/1.13.4/terraform_1.13.4_linux_amd64.zip -o terraform.zip
     unzip terraform.zip
     sudo mv terraform /usr/local/bin/
     terraform --version
